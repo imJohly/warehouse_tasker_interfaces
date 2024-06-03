@@ -12,11 +12,15 @@ find_package(ament_cmake REQUIRED)
 # find_package(<dependency> REQUIRED)
 
 find_package(rosidl_default_generators REQUIRED)
+find_package(geometry_msgs REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
+  "srv/AgentState.srv"
   "srv/Register.srv"
-  "srv/SendTask.srv"
   "srv/SendGoal.srv"
+  "srv/SendPathDist.srv"
+  "srv/SendTask.srv"
+  DEPENDENCIES geometry_msgs std_msgs
  )
 
 if(BUILD_TESTING)

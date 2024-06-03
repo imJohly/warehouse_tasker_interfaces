@@ -1,0 +1,5 @@
+float32 path_length
+string  agent_id
+string  goal_id
+---
+bool    success

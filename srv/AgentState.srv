@@ -1,4 +1,4 @@
 string  agent
-string  goal
+int32   state
 ---
 bool    success
