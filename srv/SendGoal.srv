@@ -1,4 +1,0 @@
-geometry_msgs/PoseStamped   goal_pose
-string                      goal_id
----
-bool                        success

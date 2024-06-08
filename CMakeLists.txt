@@ -15,10 +15,8 @@ find_package(rosidl_default_generators REQUIRED)
 find_package(geometry_msgs REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-  "srv/AgentState.srv"
   "srv/Register.srv"
-  "srv/SendGoal.srv"
-  "srv/SendPathDist.srv"
+  "srv/SendPose.srv"
   "srv/SendTask.srv"
   DEPENDENCIES geometry_msgs std_msgs
  )

@@ -1,4 +1,0 @@
-string  agent
-int32   state
----
-bool    success
