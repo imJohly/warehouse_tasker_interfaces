@@ -1,4 +1,3 @@
-geometry_msgs/PoseStamped   pose
-string                      id
+geometry_msgs/Pose[]    pose
 ---
-bool                        success
+bool                    success

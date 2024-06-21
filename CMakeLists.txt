@@ -16,6 +16,7 @@ find_package(geometry_msgs REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/Register.srv"
+  "srv/GetPose.srv"
   "srv/SendPose.srv"
   "srv/SendTask.srv"
   DEPENDENCIES geometry_msgs std_msgs
